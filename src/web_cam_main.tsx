@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ClerkProvider } from '@clerk/clerk-react'
-import App from './App.tsx'
+import App from './web_cam_app'
 import './index.css'
 import { Toaster } from "@/components/ui/sonner"
 
