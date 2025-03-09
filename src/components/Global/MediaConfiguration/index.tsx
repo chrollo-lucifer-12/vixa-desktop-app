@@ -13,7 +13,7 @@ export const MediaConfiguration = ({ state, user }: Props) => {
 
     const activeAudio = state.audioInputs?.find((device) => device.deviceId === user.audio)
 
-    const { isPending, onPreset, register } = useStudioSettings(user.id, user?.screen || state?.displays?.[0].id, user.audio || state?.audioInputs?.[0].deviceId, user.preset);
+    const { isPending, onPreset, register } = useStudioSettings(user.media.id, user.media.screen || state?.displays?.[0].id, user.media.audio || state?.audioInputs?.[0].deviceId, user.media.preset);
 
     return (
         <form className="flex h-full relative w-full flex-col gap-y-5">

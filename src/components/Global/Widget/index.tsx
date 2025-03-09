@@ -18,6 +18,7 @@ const Widget = () => {
         }   
     }, [user])
     
+    console.log(profile);
 
   return (  
     <div className='p-5'>

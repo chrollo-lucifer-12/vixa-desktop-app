@@ -47,7 +47,7 @@ function createWindow() {
 
   studio = new BrowserWindow({
     width: 400,
-    height: 50,
+    height: 300,
     minHeight: 70,
     maxHeight: 400,
     minWidth: 300,
@@ -147,7 +147,7 @@ ipcMain.handle("getSources", async () => {
 
 ipcMain.on("media-sources", (event, payload) => {
   console.log(event)
-  studio?.webContents.send("profile-recieved", payload)
+  studio?.webContents.send("profile-received", payload)
 })
 
 ipcMain.on("resize-studio", (event, payload) => {
